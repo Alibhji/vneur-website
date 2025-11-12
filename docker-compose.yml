@@ -1,0 +1,10 @@
+services:
+  vneur-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    container_name: vneur-website
+    restart: unless-stopped
+
